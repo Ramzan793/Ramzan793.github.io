@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="CSS/calculator.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <div class=""> -->
+        <!-- <h1 class="text-primary">Calculator</h1>
+        <input id="inp1" class="d-input" type="number">
+        <div class="d-input">+</div>
+        <input id="inp2" class="d-input" type="number">
+        <div class="d-input">=</div>
+        <div id="res" class="d-input">?</div>
+        <button class="btn btn-primary" onclick="addition();">calculate</button>
+        <br> <br>
+        <input id="inp3" class="d-input" type="number">
+        <div class="d-input">-</div>
+        <input id="inp4" class="d-input" type="number">
+        <div class="d-input">=</div>
+        <div id="res1" class="d-input">?</div>
+        <button class="btn btn-danger" onclick="sub();">calculate</button>
+        <br><br>
+        <input id="inp5" class="d-input" type="number">
+        <div class="d-input">*</div>
+        <input id="inp6" class="d-input" type="number">
+        <div class="d-input">=</div>
+        <div id="res2" class="d-input">?</div>
+        <button class="btn btn-primary" onclick="multiply();">calculate</button>
+        <br> <br>
+        <input id="inp7" class="d-input" type="number">
+        <div class="d-input">/</div>
+        <input id="inp8" class="d-input" type="number">
+        <div class="d-input">=</div>
+        <div id="res3" class="d-input">?</div>
+        <button class="btn btn-primary" onclick="division();">calculate</button>
+        <br> <br>
+        <div id="con"></div>
+        <button class="btn btn-primary" onclick="concat()">concatination</button>
+    </div> -->
+    <label for="" class="text-primary bg-danger">Enter your no 1</label>
+    <input id="inp1" class="" type="number">
+    <label for="">Enter your sign here(+,-,*,/)</label>
+    <input id="inp3" type="text">
+    <label for="">Enter your no 2</label>
+    <input id="inp2" type="number">
+    
+    <button onclick="Calculate();">calculate</button>
+
+    <div id="res">?</div>
+
+    <script>
+        function Calculate() {
+            var num1 = parseInt(document.getElementById("inp1").value);
+            var num2 = parseInt(document.getElementById("inp2").value);
+            var sign = document.getElementById("inp3").value;
+
+            if (sign=='+') {
+                document.getElementById('res').innerHTML =num1+num2;
+            }
+            if (sign == '-') {
+                document.getElementById('res').innerHTML =num1-num2;
+            }
+            if (sign == '*') {
+                document.getElementById('res').innerHTML =num1*num2;
+            }
+            if (sign == '/') {
+                document.getElementById('res').innerHTML =num1/ num2;
+            }
+            
+        }
+        // function addition() {
+        //     var x = parseInt(document.getElementById('inp1').value);
+        //     var y = parseInt(document.getElementById('inp2').value);
+        //     document.getElementById('res').innerHTML = x + y;
+        // }
+        // function sub() {
+        //     var x = document.getElementById('inp3').value;
+        //     var y = document.getElementById('inp4').value;
+        //     document.getElementById('res1').innerHTML = x - y;
+        // }
+        // function multiply() {
+        //     var x = document.getElementById('inp5').value;
+        //     var y = document.getElementById('inp6').value;
+        //     document.getElementById('res2').innerHTML = x * y;
+        // }
+        // function division() {
+        //     var x = document.getElementById('inp7').value;
+        //     var y = document.getElementById('inp8').value;
+        //     document.getElementById('res3').innerHTML = x / y;
+        // }
+
+
+        // function concat() {
+        //     var a = "Muhammad"
+        //     var b = "Ramzan"
+        //     var c = "Shakeel"
+        //     var d = 78
+        //     document.getElementById('con').innerHTML = a + b + c + d;
+        // }
+    </script>
+</body>
+
+</html>
