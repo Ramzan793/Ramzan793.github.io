@@ -675,7 +675,7 @@ header {
 only screen and (min-width:768px) and (max-width:991px),
 (max-width:767px) {
     header {
-        padding: 30px 10px
+        padding: 0px 10px
     }
 }
 
