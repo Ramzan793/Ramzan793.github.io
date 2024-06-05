@@ -70,6 +70,12 @@ Text Domain: Logistcwr
   margin-bottom: -350px;
   position: relative;
 }
+.owl-carousel .owl-stage-outer {
+    padding: 20px 0px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
 .container-large {
   max-width: 1600px;
 }
