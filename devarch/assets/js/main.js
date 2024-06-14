@@ -181,26 +181,35 @@ Preloader activation
         spaceBetween: 50,
         slidesPerGroup: 1,
         loop: true,
-        autoplay: true,
-        grabcursor: true,
-        speed: 400,
+        autoplay: {
+            delay: 0, // No delay between transitions
+            disableOnInteraction: false // Continue autoplay after interactions
+        },
+        speed: 2000, // Adjust speed to make the movement smooth
+        grabCursor: true,
         breakpoints: {
             320: {
                 slidesPerView: 2,
                 slidesPerGroup: 1,
                 spaceBetween: 25,
+                speed: 2000, // Match speed for smaller screens
             },
             767: {
                 slidesPerView: 4,
                 slidesPerGroup: 1,
                 spaceBetween: 30,
+                speed: 2000, // Match speed for medium screens
             },
             1024: {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 slidesPerGroup: 1,
+                speed: 2000, // Match speed for larger screens
             },
         },
+        // Remove grabCursor: true for continuous auto movement
+        grabCursor: false,
     });
+    
 
     // Testimonial Carousel
     var testimonialThumb = new Swiper(".thumb-carousel", {
