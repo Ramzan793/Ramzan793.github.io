@@ -7003,3 +7003,23 @@ a {
           color: #fff;
           margin-top: 10px;
       }
+      .footer-contact ul li span a {
+        color: #CCDEFF;
+        font-family: "Jost", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+    }
+    .offer-inner.vre-reveal-one .offer-name {
+      /* display: none; Initially hidden */
+      transform: translateX(-100%); /* Position the element off-screen to the left */
+      opacity: 0; /* Make it invisible initially */
+      transition: transform 1s ease, opacity 1s ease; /* Apply transition effects */
+  }
+  
+  .offer-inner.vre-reveal-one:hover .offer-name {
+      /* display: block; Make it visible */
+      transform: translateX(0); /* Move it to its original position */
+      opacity: 1; /* Make it fully visible */
+  }
+  
